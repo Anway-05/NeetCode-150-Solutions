@@ -13,7 +13,7 @@ This repository documents my journey through one of the most popular interview p
 * **Goal:** Strengthen DSA fundamentals for software engineering and AI/ML placements.
 * **Platform:** NeetCode & LeetCode
 
-Each solution is written after attempting the problem independently and is committed as I progress through the roadmap.
+Solutions are synchronized from my NeetCode submissions and reflect my progress as I work through the roadmap.
 
 ---
 
@@ -52,16 +52,22 @@ I update this repository regularly as I solve more problems.
 
 ## Repository Structure
 
-Each folder contains solutions grouped by topic.
+Each problem has its own directory containing one or more submitted solutions. If a problem has been solved multiple times, each attempt is stored as a separate submission file.
+
+Example:
 
 ```text
-Arrays & Hashing/
-Two Pointers/
-Stack/
-Binary Search/
-Trees/
-Graphs/
-...
+two-sum/
+│── submission-0.py
+│── submission-1.py
+
+valid-anagram/
+│── submission-0.py
+
+binary-search/
+│── submission-0.py
+│── submission-1.py
+│── submission-2.py
 ```
 
 ---
