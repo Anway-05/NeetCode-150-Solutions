@@ -52,9 +52,11 @@ I update this repository regularly as I solve more problems.
 
 ## Repository Structure
 
-Each problem has its own directory containing one or more submitted solutions. If a problem has been solved multiple times, each attempt is stored as a separate submission file.
+Each problem has its own directory containing one or more submitted solutions.
 
-Example:
+If a problem has multiple submissions, they represent different attempts made over time. Earlier submissions reflect my initial approaches and learning process, while the **last submission is generally my most optimized or refined solution** at that point.
+
+**Example:**
 
 ```text
 two-sum/
@@ -72,7 +74,7 @@ binary-search/
 
 ---
 
-## Why this Repository?
+## Why This Repository?
 
 This repository serves as:
 
