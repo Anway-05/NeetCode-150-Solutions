@@ -10,27 +10,18 @@ class Solution:
                     count+=1
                 if grid[i][j]==2:
                     dq.append((i,j))
-        if count==0:
-            return 0
-        timer=-1
-        level=0
-        while dq:
-            if level==0:
-                level=len(dq)
-                timer+=1
-            print(level,timer)
-            i,j=dq.popleft()
-            for di,dj in directions:
-                ni,nj=i+di,j+dj
-                if ni<0 or nj<0 or ni>=len(grid) or nj>=len(grid[0]):
-                    continue
-                if grid[ni][nj]==1:
-                    grid[ni][nj]=2
-                    count-=1
-                    dq.append((ni,nj))
-            level-=1
-        if count==0:
-            return timer
-        else:
-            return -1
+        timer=0
+        while dq and count>0:
+            for _ in range(len(dq)):
+                i,j=dq.popleft()
+                for di,dj in directions:
+                    ni,nj=i+di,j+dj
+                    if ni<0 or nj<0 or ni>=len(grid) or nj>=len(grid[0]):
+                        continue
+                    if grid[ni][nj]==1:
+                        grid[ni][nj]=2
+                        count-=1
+                        dq.append((ni,nj))
+            timer+=1
+        return timer if count==0 else -1
         
